@@ -18,16 +18,29 @@ export const FullWidthDesignSection: React.FC = () => {
               <li>• Border-bottom separators instead of rounded cards</li>
               <li>• Clean, native app-like visual hierarchy</li>
               <li>• Optimized for thumb navigation and touch targets</li>
+              <li>• Perfect for Codespaces preview and mobile viewports</li>
             </ul>
           </div>
           
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
-            <h4 className="font-semibold text-green-900 dark:text-green-100 mb-2">Visual Consistency</h4>
+            <h4 className="font-semibold text-green-900 dark:text-green-100 mb-2">Visual Consistency & Performance</h4>
             <ul className="space-y-1 text-green-800 dark:text-green-200 text-sm">
               <li>• Consistent pattern across intake and phrases pages</li>
               <li>• Unified spacing and typography system</li>
               <li>• Seamless dark/light theme transitions</li>
               <li>• Professional, government-appropriate aesthetics</li>
+              <li>• Minimal layout shift during theme changes</li>
+              <li>• Optimized for Lighthouse performance metrics</li>
+            </ul>
+          </div>
+
+          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
+            <h4 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">PWA Excellence</h4>
+            <ul className="space-y-1 text-purple-800 dark:text-purple-200 text-sm">
+              <li>• Maskable icons for perfect home screen installation</li>
+              <li>• App screenshots for enhanced install prompts</li>
+              <li>• Safe area padding for notched devices</li>
+              <li>• Viewport meta optimized for mobile browsers</li>
             </ul>
           </div>
         </div>

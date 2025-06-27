@@ -57,6 +57,27 @@ export const MultilingualSection: React.FC = () => {
               <span className="text-gray-700 dark:text-gray-300"> Interface adapts to different cultural communication patterns</span>
             </div>
           </div>
+          <div className="flex items-start gap-3">
+            <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+            <div>
+              <strong className="text-gray-800 dark:text-gray-200">Accessibility Across Languages:</strong>
+              <span className="text-gray-700 dark:text-gray-300"> Screen readers and assistive technology work seamlessly with all supported languages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 border border-blue-200 dark:border-blue-800">
+        <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-3">Performance & Scalability</h3>
+        <div className="space-y-2 text-sm">
+          <p className="text-blue-800 dark:text-blue-200">
+            Language data is efficiently bundled and can be lazy-loaded as needed. The chunk splitting strategy 
+            in our Vite build system ensures that adding new languages doesn't impact initial load performance.
+          </p>
+          <p className="text-blue-800 dark:text-blue-200">
+            Each language module maintains the same accessibility standards and form semantics, ensuring 
+            consistent user experience regardless of language selection.
+          </p>
         </div>
       </div>
     </div>
