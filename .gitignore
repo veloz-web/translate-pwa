@@ -23,3 +23,63 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Chrome/Browser downloads for testing
+chrome/
+chromium/
+google-chrome/
+browser-downloads/
+
+# Lighthouse CI artifacts
+.lighthouseci/
+lighthouse-results/
+lhci_reports/
+
+# Accessibility testing reports
+axe-report.json
+accessibility-report.json
+a11y-report/
+
+# Duplicate/backup config files
+lighthouserc.js
+*.backup
+*.bak
+*.tmp
+
+# Coverage reports
+coverage/
+.nyc_output/
+*.lcov
+
+# Build artifacts
+*.tsbuildinfo
+.cache/
+.turbo/
+
+# OS generated files
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+Icon?
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Package manager lock files (keep only one)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+*.db
+*.sqlite
+
+# Service worker cache
+sw.js.map

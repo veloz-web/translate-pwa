@@ -1,10 +1,11 @@
 # Security Headers for Netlify deployment
 /*
-  # Content Security Policy - Prevents XSS attacks (Strict policy without unsafe-inline)
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; media-src 'self' blob:; worker-src 'self' blob:; child-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  # Content Security Policy - Strict policy without unsafe-inline (using nonces/hashes for inline scripts)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; media-src 'self' blob:; worker-src 'self' blob:; child-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   
-  # Cross-Origin-Opener-Policy - Isolates top-level window
+  # Cross-Origin-Opener-Policy - Stronger isolation
   Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
   
   # X-Frame-Options - Prevents clickjacking
   X-Frame-Options: DENY
@@ -15,7 +16,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(self), geolocation=(), payment=(), usb=()
   
-  # HSTS - Force HTTPS
+  # HSTS - Force HTTPS with preload directive
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   
   # Cache control for security

@@ -8,16 +8,37 @@ export const NativeWebStandardsSection: React.FC = () => {
       </div>
 
       <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Native HTML Accordion Pattern</h3>
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Native HTML Patterns</h3>
         
         <div className="space-y-4">
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
-            <h4 className="font-semibold text-green-900 dark:text-green-100 mb-2">Browser-Native Behavior</h4>
+            <h4 className="font-semibold text-green-900 dark:text-green-100 mb-2">Accordion Pattern with details/summary</h4>
             <ul className="space-y-1 text-green-800 dark:text-green-200 text-sm">
               <li>• Uses HTML `name="accordion"` attribute for automatic exclusivity</li>
               <li>• Only one section open at a time without JavaScript</li>
               <li>• Eliminates complex state management and recursive toggling</li>
               <li>• Better performance and reliability than custom solutions</li>
+            </ul>
+          </div>
+
+          <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg border border-orange-200 dark:border-orange-800">
+            <h4 className="font-semibold text-orange-900 dark:text-orange-100 mb-2">Radio Buttons for State Management</h4>
+            <ul className="space-y-1 text-orange-800 dark:text-orange-200 text-sm">
+              <li>• Theme selection uses radio inputs - browser natively tracks checked state</li>
+              <li>• No custom JavaScript state management needed for selection</li>
+              <li>• Similar to details/summary pattern - native HTML handles the complexity</li>
+              <li>• Accessible by default with fieldset/legend grouping</li>
+              <li>• Screen readers understand radio groups automatically</li>
+            </ul>
+          </div>
+
+          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
+            <h4 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">Checkbox Toggles for Binary State</h4>
+            <ul className="space-y-1 text-purple-800 dark:text-purple-200 text-sm">
+              <li>• Settings toggles use hidden checkboxes with styled labels</li>
+              <li>• Native checked/unchecked state without button click handlers</li>
+              <li>• Proper form semantics for assistive technology</li>
+              <li>• Toggle switches are just visual - checkboxes provide the functionality</li>
             </ul>
           </div>
           

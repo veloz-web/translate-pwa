@@ -22,9 +22,12 @@ export const CodeDisciplineSection: React.FC = () => {
           </div>
           
           <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-            <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Semantic HTML Over Divs</h4>
+            <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Semantic HTML Over Divs & Buttons</h4>
             <ul className="space-y-1 text-blue-800 dark:text-blue-200 text-sm">
               <li>• Native <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> for accordions</li>
+              <li>• <strong>Radio inputs for theme selection</strong> - native checked state, no state management</li>
+              <li>• <strong>Checkbox inputs for toggles</strong> - proper accessibility with labels</li>
+              <li>• <strong>Fieldset/legend grouping</strong> - logical form control organization</li>
               <li>• Proper <code>&lt;form&gt;</code> elements with <code>role="search"</code></li>
               <li>• <code>&lt;button&gt;</code> elements instead of clickable divs</li>
               <li>• <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code> landmarks</li>
@@ -34,27 +37,34 @@ export const CodeDisciplineSection: React.FC = () => {
       </div>
 
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">State Management Discipline</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Smart State Management Philosophy</h3>
         <div className="space-y-3 text-sm">
           <div className="flex items-start gap-3">
             <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
             <div>
+              <strong className="text-gray-800 dark:text-gray-200">Native State Over Managed State:</strong>
+              <span className="text-gray-700 dark:text-gray-300"> Use radio/checkbox checked state instead of React state for form controls</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+            <div>
+              <strong className="text-gray-800 dark:text-gray-200">Details/Summary Pattern:</strong>
+              <span className="text-gray-700 dark:text-gray-300"> Native open/closed state without JavaScript, similar to radio checked state</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+            <div>
               <strong className="text-gray-800 dark:text-gray-200">Minimal State:</strong>
-              <span className="text-gray-700 dark:text-gray-300"> Only store what can't be derived or computed</span>
+              <span className="text-gray-700 dark:text-gray-300"> Only store what can't be derived, computed, or handled natively</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
             <div>
-              <strong className="text-gray-800 dark:text-gray-200">Native Behavior:</strong>
-              <span className="text-gray-700 dark:text-gray-300"> Leverage browser features instead of custom JavaScript</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-            <div>
-              <strong className="text-gray-800 dark:text-gray-200">No Wrapper Divs:</strong>
-              <span className="text-gray-700 dark:text-gray-300"> Avoid unnecessary DOM nesting and wrapper elements</span>
+              <strong className="text-gray-800 dark:text-gray-200">Native Behavior First:</strong>
+              <span className="text-gray-700 dark:text-gray-300"> Leverage browser features instead of reinventing with JavaScript</span>
             </div>
           </div>
         </div>

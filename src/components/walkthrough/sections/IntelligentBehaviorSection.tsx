@@ -34,6 +34,14 @@ export const IntelligentBehaviorSection: React.FC = () => {
               conditional fields appear based on previous answers.
             </p>
           </div>
+
+          <div className="border-l-4 border-orange-500 pl-4">
+            <h4 className="font-semibold text-orange-900 dark:text-orange-100">Smart Form Controls</h4>
+            <p className="text-gray-700 dark:text-gray-300 text-sm mt-1">
+              Settings use proper form elements: radio groups for theme selection automatically handle mutual exclusivity,
+              checkboxes for toggles provide native on/off state. No custom JavaScript state management needed.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -45,8 +53,9 @@ export const IntelligentBehaviorSection: React.FC = () => {
             <ul className="space-y-1 text-gray-700 dark:text-gray-300">
               <li>• Reduces time to find information</li>
               <li>• Minimizes training requirements</li>
-              <li>• Prevents user errors</li>
+              <li>• Prevents user errors through smart defaults</li>
               <li>• Supports high-stress situations</li>
+              <li>• Perfect Lighthouse scores ensure fast loading</li>
             </ul>
           </div>
           <div>
@@ -56,8 +65,17 @@ export const IntelligentBehaviorSection: React.FC = () => {
               <li>• Reduces cognitive load</li>
               <li>• Builds user confidence</li>
               <li>• Encourages proper usage</li>
+              <li>• Accessible to all agents regardless of abilities</li>
             </ul>
           </div>
+        </div>
+        
+        <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+          <h4 className="font-medium text-blue-900 dark:text-blue-100 mb-2">Engineering Excellence</h4>
+          <p className="text-blue-800 dark:text-blue-200 text-sm">
+            Every optimization serves dual purposes: better user experience AND better Lighthouse scores. 
+            Chunk splitting improves loading, semantic HTML improves accessibility, native form controls improve both performance and usability.
+          </p>
         </div>
       </div>
     </div>

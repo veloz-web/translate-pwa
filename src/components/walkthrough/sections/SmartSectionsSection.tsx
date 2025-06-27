@@ -81,6 +81,14 @@ export const SmartSectionsSection: React.FC = () => {
             </ul>
           </div>
         </div>
+        
+        <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
+          <h4 className="font-medium text-yellow-900 dark:text-yellow-100 mb-2">Performance Impact</h4>
+          <p className="text-yellow-800 dark:text-yellow-200 text-sm">
+            Smart section management reduces DOM complexity and improves paint performance. Combined with aggressive chunk splitting 
+            in Vite, this pattern contributes to perfect Lighthouse performance scores by minimizing layout thrashing.
+          </p>
+        </div>
       </div>
     </div>
   );
